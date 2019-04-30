@@ -5,7 +5,7 @@
 ## General description
 
 This application displays a collection of movies.
-Movies list (/movies) can be searched, filtered for a genre and ordered by name or rating. Clicking on a movie will land on a movie details page (/movie/{id}) which displays further information about the movie.
+Movies list (/movies) can be searched, filtered by a genre and ordered by name or rating. Clicking on a movie will land on a movie details page (/movie/{id}) which displays further information about the movie.
 
 
 ## Technical info
