@@ -1,0 +1,11 @@
+<div id="search-component">
+  <h2 class="u-filterheading">Search</h2>
+  <input #searchBox id="search-box" class="u-bottom-bordered-control" (input)="search(searchBox.value)" />
+  <ul class="search-result">
+    <li *ngFor="let movie of movies$ | async" >
+      <a routerLink="/movie/{{movie.id}}">
+        {{movie.name}}
+      </a>
+    </li>
+  </ul>
+</div>

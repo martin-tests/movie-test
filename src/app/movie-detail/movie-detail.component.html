@@ -1,0 +1,22 @@
+<div>
+    <a routerLink="/movies">{{"&larr;"}}&nbsp;All movies</a>
+</div>
+<div *ngIf="movie">
+    <h2>{{movie.name | uppercase}}</h2>
+    <div class="movie-details-container">
+        <div class="cover">
+            <img src="assets/images/movie-covers/{{movie.img}}" alt="{{movie.name}}">
+        </div>
+        <div>
+            <div class="description">{{movie.description}}</div>
+            <div class="genres">
+                    <span class="detail-label">Genre(s):</span> 
+                    <span *ngFor="let genre of movie.genres; last as isLast">
+                        {{genre | titlecase}}{{isLast ? '' : ', '}}
+                    </span>
+                </div>
+            <div class="rating"><span class="detail-label">Rating:</span>&nbsp;☆{{movie.rate}}</div>
+            <div class="length"><span class="detail-label">Duration:</span> {{movie.length}}</div>
+        </div>
+    </div>
+</div>

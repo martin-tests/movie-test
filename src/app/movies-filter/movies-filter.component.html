@@ -1,0 +1,6 @@
+<div id="genrefilter-component">
+  <h2 class="u-filterheading">Genres</h2>
+  <ul id="genres-list">
+    <li class="genre" [class.selected]="genre === selectedGenre" *ngFor="let genre of genres" (click)="onSelect(genre)">{{genre | titlecase}}</li>
+  </ul>
+</div>

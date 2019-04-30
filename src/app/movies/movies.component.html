@@ -1,0 +1,30 @@
+<div id="search-filter-movies-container">
+  <div id="search-filter-container">
+    <app-movie-search></app-movie-search>
+    <app-movies-filter></app-movies-filter>
+  </div>
+  <div>
+    <div id="movies-order">
+      <span id="order-explainer">Order by </span>
+      <select class="u-bottom-bordered-control" (change)="changeOrder($event.target.value)">
+        <option value="name">name</option>
+        <option value="rating">rating</option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <ul class="movies">
+      <li *ngFor="let movie of movies">
+        <a routerLink="/movie/{{movie.id}}">
+          <div class="cover">
+            <div class="cover-rating" *ngIf="selectedOrder === 'rating'">☆{{movie.rate}}</div>
+            <img src="assets/images/movie-covers/{{movie.img}}" alt="{{movie.name}}">
+          </div>
+          <div class="title">{{movie.name}}</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+</div>
+

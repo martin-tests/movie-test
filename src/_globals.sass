@@ -1,0 +1,32 @@
+$break-vsmall: 330px
+$break-small: 570px
+$break-medium: 900px
+$break-large: 1400px
+
+.u-bottom-bordered-control
+    border-radius: 0px
+    border-color: lightgrey
+    border-width: 1px
+    border-top: none
+    border-left: none
+    border-right: none
+
+#search-component, #genrefilter-component
+    display: inline-block
+    margin: 0
+    text-align: center
+    vertical-align: top
+    
+
+@media screen and (max-width: $break-small)
+    .u-filterheading
+        margin-bottom: 0
+    
+    #genres-list
+        margin-block-end: 0
+        margin-block-start: 0
+
+@media screen and (min-width: $break-small)
+    #search-component, #genrefilter-component
+        margin: 0 80px
+

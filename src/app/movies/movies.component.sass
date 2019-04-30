@@ -1,0 +1,88 @@
+@import 'src/_globals.sass'
+
+h2
+  text-align: center
+
+#search-filter-movies-container
+  padding: 0
+
+#search-filter-container
+  margin: 0
+  text-align: center
+
+#movies-order
+  color: #999
+  text-align: center
+  margin: 1em 0 0 0
+
+#movies-order select
+  color: #999
+
+.movies 
+  margin: 1em 0 0 0
+  list-style-type: none
+  padding-inline-start: 0
+  padding-inline-end: 0
+  text-align: center
+  width: fit-content
+
+.movies li 
+  cursor: pointer
+  display: inline-block
+  margin: .5em
+  padding: .3em
+  border-radius: 4px
+  vertical-align: top
+ 
+.movies li:hover
+  color: #607D8B
+  background-color: #DDD
+  left: .1em
+ 
+.movies a 
+  color: #888
+  text-decoration: none
+  position: relative
+  display: block
+  width: 200px
+  text-align: center
+
+.movies a:hover, 
+  color: #607D8B
+
+.movies .badge 
+  display: inline-block
+  font-size: small
+  color: white
+  padding: 0.8em 0.7em 0 0.7em
+  background-color: #607D8B
+  line-height: 1em
+  position: relative
+  left: -1px
+  top: -4px
+  height: 1.8em
+  min-width: 16px
+  text-align: right
+  margin-right: .8em
+  border-radius: 4px 0 0 4px
+
+.movies .cover
+  display: inline-block
+  padding-top: 5px
+
+.movies .title
+  display: inline-block
+  vertical-align: middle
+  height: 2.5em
+  padding-top: 0.5em
+
+@media screen and (min-width: $break-vsmall)
+  #search-filter-movies-container
+    padding: 0 40px
+
+@media screen and (min-width: $break-medium)
+  #search-filter-movies-container
+    padding: 0 10%
+
+  #search-filter-container
+    margin: 2em 0 0 0

@@ -1,0 +1,41 @@
+@import 'src/_globals.sass'
+    
+.u-spaced
+    justify-content: space-between
+
+h2
+    text-align: center
+
+.movie-details-container, .details-container
+    display: block
+
+.movie-details-container
+    margin: 0 15%
+    text-align: center
+
+.detail-label
+    font-weight: bold
+
+.description, .genres, .rating, .length
+    margin: 5px 10px
+
+.description
+    max-width: 600px
+    text-align: center
+    padding-bottom: 1em
+
+@media screen and (min-width: $break-medium)
+    .movie-details-container, .details-container
+        display: flex
+        text-align: left
+
+    .movie-details-container
+        align-items: flex-end
+    
+    .description
+        padding-bottom: 2em
+        text-align: left
+
+@media screen and (min-width: $break-large)
+    .movie-details-container
+        margin: 0 25%
