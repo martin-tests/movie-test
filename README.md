@@ -12,6 +12,15 @@ Movies list (/movies) can be searched, filtered by a genre and ordered by name o
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
+### Preconditions
+
+Prior to running this application you should have Node.js (https://nodejs.org/), NPM and Angular (https://angular.io/) installed.
+
+### Install application
+
+- Clone or download the latest application code from GitHub.
+- In application folder run "npm install" to install necessary Node.js modules.
+
 ### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
